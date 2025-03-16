@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarter I - Greek Themed</title>
+    
+    <!-- Greek-Inspired Styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        body {
+            background-color: #F7E8A4;
+            font-family: 'Cinzel', serif;
+            text-align: center;
+            color: #5A4A2C;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #C8A951;
+            padding: 15px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #3E2723;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: white;
+        }
+
+        .heads {
+            padding: 20px;
+            background-color: #E8C172;
+        }
+
+        .content {
+            margin: 40px auto;
+            padding: 20px;
+            width: 80%;
+            background-color: #FAE5C3;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1, h2, h3 {
+            color: #3E2723;
+        }
+
+        img {
+            border: 3px solid #3E2723;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="/"> Home </a>
+        <a href="#me"> Get to know me! </a>
+        <a href="#likes"> Likes </a>
+        <a href="#dislikes"> Dislikes </a>
+        <a href="#songs"> Song Preferences </a>
+        <a href="https://profound-sunburst-fc7f46.netlify.app/activities"> ICT Activities </a>
+        <a href="https://profound-sunburst-fc7f46.netlify.app/reflection"> Reflection </a>
+    </div>
+
+    <!-- Header -->
+    <div class="heads" id="home">
+        <h1>First Quarter</h1>
+        <h3>All activities of first quarter</h3>
+    </div>
+
+    <!-- About Me -->
+    <div class="content" id="me">
+        <h1>Get to know me!</h1>
+        <h2>Who am I?</h2>
+        <a href="https://web.facebook.com/jaz.baltazar.2024">
+            <img src="pic1.jpg" width="250px" height="500px">
+        </a>
+        <p>
+            Pinanganak ako na walang kambal, kaya't sana mahalin mo rin ako na walang karibal.
+            Jazmin nga po pala, anim na letra madaling tandaan at mahirap kalimutan,
+            walang ibang bisyo kundi laging imissyou. <br><br>
+
+            I am Jazmin Baltazar from 9-Fidelity. I can speak three languages: Filipino, German, and English.
+            My fluency in German is still not great, but I am trying my best to improve.
+            I have a younger brother, and I'm two years older than him. <br><br>
+        </p>
+    </div>
+
+    <!-- Likes -->
+    <div class="content" id="likes">
+        <img src="likes.png" width="400px" height="400px">
+        <h2>Likes</h2>
+        <ol>
+            <li>Animals
+                <ul>
+                    <li>Cats</li>
+                    <li>Bears</li>
+                    <li>Jellyfish</li>
+                </ul>
+            </li>
+            <li>Food
+                <ul>
+                    <li>Okonomiyaki</li>
+                    <li>Leche Flan</li>
+                    <li>Lasagna</li>
+                </ul>
+            </li>
+            <li>Subjects
+                <ul>
+                    <li>Filipino</li>
+                    <li>Basic Calculus</li>
+                    <li>Mathematics</li>
+                    <li>Economics</li>
+                </ul>
+            </li>
+            <li>Anime
+                <ul>
+                    <li>One Piece</li>
+                    <li>Dan Dadandan</li>
+                    <li>Summertime Rendering</li>
+                    <li>Erased</li>
+                    <li>Maboroshi</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <!-- Dislikes -->
+    <div class="content" id="dislikes">
+        <h2>Dislikes</h2>
+        <p>
+            I have multiple dislikes. Some examples are **disrespect when eating**, including:
+            loud chewing, arguing in front of food, not finishing food, standing up repeatedly, and talking with a full mouth.
+            I believe that food is a blessing, and <b>NOBODY</b> should show disrespect to it in any way.<br><br>
+
+            Another dislike is interruptions during conversations. When someone butts in without being part of the discussion,
+            touches things without permission, invades personal space, or disregards the other person's thoughts—it's frustrating.
+            A conversation requires two or more people; it <b>CANNOT</b> be one-sided.<br><br>
+
+            Lastly, **colognes and perfumes**. In our household, nobody really uses them since we all have allergies toward strong scents.
+            Personally, whenever I smell perfume, cologne, or air fresheners, my nose gets clogged, my eyes water, and I feel dizzy.
+        </p>
+    </div>
+
+    <!-- Song Preferences -->
+    <div class="content" id="songs">
+        <h2>Song Preferences</h2>
+        <h3>Click on the image to open the album</h3>
+        <a href="https://open.spotify.com/playlist/2LHfTDoBeibEJxyshOTDuH?si=I5-5kTFGQBSBmsX7o4lxTw">
+            <img src="music.jpg" width="500px" height="250px">
+        </a>
+        <ol>
+            <li>Bands
+                <ul>
+                    <li>Oasis</li>
+                    <li>Eraserheads</li>
+                    <li>Radiohead</li>
+                    <li>Parokya ni Edgar</li>
+                    <li>Cranberries</li>
+                    <li>Blink 182</li>
+                    <li>Moonstar88</li>
+                </ul>
+            </li>
+            <li>Solo Artists
+                <ul>
+                    <li>Yeng Constantino</li>
+                    <li>Alanis Morissette</li>
+                    <li>KZ & TJ</li>
+                    <li>Sabrina Carpenter</li>
+                    <li>Taylor Swift</li>
+                </ul>
+            </li>
+            <li>Musicals
+                <ul>
+                    <li>Epic: The Musical</li>
+                    <li>Hamilton</li>
+                    <li>Six</li>
+                    <li>Beetlejuice</li>
+                    <li>Dear Evan Hansen</li>
+                    <li>Les Misérables</li>
+                    <li>Miss Saigon</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+</body>
+</html>

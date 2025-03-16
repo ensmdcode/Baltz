@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Activities - Greek Theme</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Cinzel', serif;
+            background: url('https://www.transparenttextures.com/patterns/marble.png'), #1e3a5f;
+            color: gold;
+            text-align: center;
+            margin: 20px;
+        }
+
+        table {
+            width: 90%;
+            margin: auto;
+            border-collapse: collapse;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.3);
+        }
+
+        td, th {
+            padding: 15px;
+            border: 1px solid gold;
+            color: white;
+        }
+
+        th {
+            background: gold;
+            color: #1e3a5f;
+            font-size: 18px;
+        }
+
+        td {
+            background: rgba(255, 215, 0, 0.2);
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 32px;
+            border-bottom: 3px solid gold;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+    width: 250px;
+            background: linear-gradient(to bottom, #1e3a5f, #0d1b2a);
+            height: 100vh;
+            padding: 20px;
+            position: fixed;
+            border-radius: 0 20px 20px 0;
+            box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+            color: gold;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            padding: 12px;
+            margin: 10px 0;
+            background: rgba(255, 215, 0, 0.2);
+            color: gold;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 1px solid gold;
+        }
+
+        .sidebar li:hover {
+            background: gold;
+            color: #1e3a5f;
+            transform: scale(1.05);
+        }
+
+     a {
+           color: gold; 
+           text-decoration: none;
+           font-weight: bold;
+           transition: all 0.3s ease-in-out;
+       }
+
+       a:hover {
+           color: #ffd700; 
+           text-shadow: 0px 0px 8px rgba(255, 215, 0, 0.8); 
+           border-bottom: 2px solid gold;
+       }
+
+        .content {
+            margin-left: 270px;
+            padding: 40px;
+            width: calc(100% - 270px);
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid #1e3a5f;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+ }
+
+        .nav-buttons {
+            margin: 20px 0;
+        }
+
+        .nav-buttons button {
+            margin: 10px;
+            padding: 10px 15px;
+            background: #1e3a5f;
+            color: gold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .nav-buttons button:hover {
+            background: gold;
+            color: #1e3a5f;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+        img, video {
+            border-radius: 10px;
+            box-shadow: 0 0 10px gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>🏛️ Greek Dashboard</h2>
+        <ul>
+            <li><a href="Index.html">🏺 Home </a></li>
+            <li onclick="showSection('q1')"><a href="first.html">📜 Quarter 1</a></li>
+            <li onclick="showSection('q2')">📖 Quarter 2</li>
+            <li onclick="showSection('q3')">🏛️ Quarter 3</li>
+            <li onclick="showSection('q4')">⚔️ Quarter 4</li>
+        </ul>
+    </div>
+
+
+    <h1>🏛️ ICT ACTIVITIES 🏛️</h1>
+
+    <table>
+        <tr>
+            <th colspan="4">9-Fidelity | Baltazar, Jazmin L.</th>
+        </tr>
+
+        <tr>
+            <th width="25%">Date of Activity</th>
+            <th width="45%">What I Felt</th>
+            <th width="30%">Picture</th>
+        </tr>
+
+        <tr>
+            <td>July 21, 2024<br><i>First Day of School Experience</i></td>
+            <td>The task was about writing my first day experience. It was funny because no one had a notepad file, so I recorded Miss U's voice and played it on my speaker! It made everyone laugh and helped me bond with my classmates.</td>
+            <td><img src="baltz.png" width="300px"></td>
+        </tr>
+
+        <tr>
+            <td>August 28, 2024<br><i>Hyperlink Hands-on Task</i></td>
+            <td>I struggled with hyperlinks because I didn’t read the presentations and wasn’t putting in effort. I learned my lesson after getting a low score!</td>
+            <td>
+                <video width="320" height="240" controls>
+                    <source src="hyperlinkpractice.mp4" type="video/mp4">
+                </video>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Pairwork - Fill in the Blanks</td>
+            <td>The task was nerve-wracking because the first 10 finishers got extra points! Luckily, I was already familiar with tables.</td>
+            <td><img src="pairwork.jpg" width="300px"></td>
+        </tr>
+
+        <tr>
+            <td>Large Text Area</td>
+            <td>My favorite task! Since I was used to the “first ten get a point” rule, my partner and I finished this with ease.</td>
+            <td><img src="largetextarea.jpg" width="300px"></td>
+        </tr>
+
+        <tr>
+            <td>Radio Buttons</td>
+            <td>Easy to do but hard to remember which attribute to use. I kept forgetting to add “type” and “value.”</td>
+            <td><img src="radio.jpg" width="300px"></td>
+        </tr>
+
+        <tr>
+            <td>Textarea</td>
+            <td>The shortest thing to code in the forms lesson—my absolute favorite! ❤️</td>
+            <td><img src="textarea.jpg" width="300px"></td>
+        </tr>
+    </table>
+
+</body>
+</html>

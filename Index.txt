@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            background: #e8f5e9;
+        }
+
+        .sidebar {
+            width: 230px;
+            background: #a5d6a7;
+            height: 100vh;
+            padding: 20px;
+            position: fixed;
+            border-radius: 0 20px 20px 0;
+            box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            color: #2e7d32;
+            font-weight: 600;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 20px 0;
+        }
+
+        .sidebar li {
+            padding: 12px;
+            margin: 10px 0;
+            background: white;
+            color: #2e7d32;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar li:hover {
+            background: #81c784;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .content {
+            margin-left: 250px;
+            padding: 40px;
+            width: 100%;
+        }
+
+        .section {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        h1 {
+            color: #2e7d32;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>💚 Dashboard</h2>
+        <ul>
+            <li onclick="showSection('home')">🏡 Home</li>
+            <li onclick="showSection('q1')">📚 Quarter 1</li>
+            <li onclick="showSection('q2')">📖 Quarter 2</li>
+            <li onclick="showSection('q3')">📔 Quarter 3</li>
+            <li onclick="showSection('q4')">📒 Quarter 4</li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div id="home" class="section">
+            <h1>🌿 ICT PORTFOLIO</h1>
+            <p><strong>Name:</strong> Your Name</p>
+            <p><strong>Grade & Section:</strong> 9-Fidelity</p>
+        </div>
+        <div id="q1" class="section hidden"><h1>📚 Quarter 1</h1><p>Content for Quarter 1.</p></div>
+        <div id="q2" class="section hidden"><h1>📖 Quarter 2</h1><p>Content for Quarter 2.</p></div>
+        <div id="q3" class="section hidden"><h1>📔 Quarter 3</h1><p>Content for Quarter 3.</p></div>
+        <div id="q4" class="section hidden"><h1>📒 Quarter 4</h1><p>Content for Quarter 4.</p></div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.add('hidden');
+            });
+
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> Athens
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balt'z Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cinzel', serif;
+        }
+
+        body {
+            display: flex;
+            background: url('https://www.transparenttextures.com/patterns/marble.png'), #f0f0f0;
+        }
+
+     a {
+           color: gold; 
+           text-decoration: none;
+           font-weight: bold;
+           transition: all 0.3s ease-in-out;
+       }
+
+       a:hover {
+           color: #ffd700; 
+           text-shadow: 0px 0px 8px rgba(255, 215, 0, 0.8); 
+           border-bottom: 2px solid gold;
+       }
+
+
+        .sidebar {
+            width: 250px;
+            background: linear-gradient(to bottom, #1e3a5f, #0d1b2a);
+            height: 100vh;
+            padding: 20px;
+            position: fixed;
+            border-radius: 0 20px 20px 0;
+            box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+            color: gold;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 20px 0;
+        }
+
+        .sidebar li {
+            padding: 12px;
+            margin: 10px 0;
+            background: rgba(255, 215, 0, 0.2);
+            color: gold;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 1px solid gold;
+        }
+
+        .sidebar li:hover {
+            background: gold;
+            color: #1e3a5f;
+            transform: scale(1.05);
+        }
+
+        .content {
+            margin-left: 270px;
+            padding: 40px;
+            width: 100%;
+        }
+
+        .section {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid #1e3a5f;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        h1 {
+            color: #1e3a5f;
+            text-transform: uppercase;
+            border-bottom: 3px solid gold;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #444;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>🏛️ Athens</h2>
+        <ul>
+            <li onclick="showsection('home')"> 🏺Home </li>
+            <li onclick="showSection('q1')"><a href="first.html">📜 Quarter 1</a></li>
+            <li onclick="showSection('q2')"><a href="second.html">📖 Quarter 2</a></li>
+            <li><a href="third.html">🏛️ Quarter 3</a></li>
+            <li><a href="fourth.html">⚔️ Quarter 4</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div id="home" class="section">
+            <h1>🏛️ ICT PORTFOLIO</h1>
+            <p><strong>Name:</strong> Baltazar, Jazmin L. </p>
+            <p><strong>Grade & Section:</strong> 9-Fidelity </p>
+            <br>
+            <br>
+            <p align="justified"> I'm just a man, but since I want to finish this quarter with a bang I asked myself "Why not go all out and greet the world with open arms?"
+                          So since I encouraged myself too much to do this here I am cramming this two days before submission.
+                          It's late already and here I am wondering why my eyes and my soul are so heavy, my brain is telling me to keep my eyes open.
+                          Multiple quarters have passed, so much has changed but I'm the same, yes I'm the same.
+                          I really poured in all my effort in this portfolio so I hope that whoever is seeing this appreciate my effort.
+                          And yes, some of the words I use is from Epic the musical. <br><br>
+
+                         Just a heads up, double tap the links to activate.
+            </p>
+          </div>
+
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.add('hidden');
+            });
+
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>

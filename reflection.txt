@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poseidon's Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+        background: linear-gradient(to bottom, #002f4b, #005f6b);
+        color: #fff;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      .navbar {
+        background: rgba(0, 47, 75, 0.8);
+        padding: 15px;
+        text-align: center;
+      }
+      .navbar a {
+        color: #00d4ff;
+        text-decoration: none;
+        font-size: 20px;
+      }
+      h1 {
+        text-shadow: 0 0 10px #00d4ff;
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+      }
+      .gallery img {
+        width: 300px;
+        height: 300px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 15px #00d4ff;
+        transition: transform 0.3s;
+      }
+      .gallery img:hover {
+        transform: scale(1.1);
+      }
+      .media {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+      }
+      video, audio {
+        border: 2px solid #00d4ff;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="twopointtwo.html">← Back to Ocean Depths</a>
+    </div>
+    
+    <h1 align="center">Reflection</h1>
+    <p align="center"> Doing this three hours before submission. Now for this quarter I learned the different ways to make your code interesting with the help of CSS
+                       In all honesty, I hate CSS. Until now actually, while I was recreating this my screen kept going white since I keep forgetting colon and semi-colon,
+                       but I'm happy that I somehow know how to use it now, my <a href="https://shiny-narwhal-490919.netlify.app/"> old code </a> sucks.
+    </p>
+</div>
+</body>
+</html>
